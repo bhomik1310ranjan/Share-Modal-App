@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Share Modal App
+        </title>
+        <link rel = "icon" href = "/assets/favicon-a9ce31ac.ico"/>
+        
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"/>
+      <link rel="stylesheet" href="/assets/index-05a71675.css">
+    </head>
+    <body>
+        <main class = "w-full h-screen overflow-hidden bg-black relative flex justify-center items-center">
+            <!-- Background Circles -->
+            <div class = "w-52 h-52 rounded-full absolute left-3/10 top-1/20 bg-gradient-to-r from-venetianRed to-chineseOrange shadow-circle shadow-venetianRed animate-circleOne"></div>
+            <div class = "w-80 h-80 rounded-full absolute right-3/10 bottom-1/20 bg-gradient-to-r from-iris to-lavenderIndigo shadow-circle shadow-iris animate-circleTwo"></div> 
+            <!-- Card -->
+            <div class = "absolute z-10 border-2 border-white30 rounded-2xl bg-white1a backdrop-blur-bwMD&LG flex flex-col items-center mx-2 xs:mx-0 gap-y-6 xs:gap-y-8 px-12 py-8 xs:px-20 xs:py-10 sm:px-12 sm:py-16">
+                <!-- Card Image -->
+                <img src = "/assets/profile-image-7442900d.webp" class = "w-32 h-32 xs:w-36 xs:h-36 border-2 border-white30 rounded-full"/>
+                <!-- Card Heading -->
+                <h2 class = "text-xl xs:text-3xl text-white font-bold text-center tracking-wide">Love Babbar</h2>
+                <!-- Card Subheading -->
+                <p class = "text-lg xs:text-xl text-white85 font-semibold text-center">Founder, CodeHelp</p>
+                <!-- Buttons -->
+                <div class = "grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <!-- Share my profile button -->
+                    <button class = "flex items-center space-x-2 border-2 border-whiteb9 rounded py-1 px-3 xs:py-1.5 group hover:bg-whiteb9 transition-all duration-200 open-modal">
+                        <i class="fa-solid fa-share text-whiteb9 text-sm group-hover:text-black transition-all duration-200"></i>
+                        <p class = "text-whiteb9 text-sm group-hover:text-black transition-all duration-200">Share My Profile</p>                        
+                    </button>
+                    <!-- Follow me button -->
+                    <button class = "border-2 border-whiteb9 text-whiteb9 text-sm rounded py-1 px-3 xs:py-1.5 hover:bg-whiteb9 hover:text-black transition-all duration-200">
+                        Follow Me
+                    </button>
+                </div>
+            </div>
+            <!-- Overlay -->
+            <div class = "w-full h-full bg-graniteGray absolute inset-0 z-20 opacity-0 pointer-events-none transition-all duration-500 ease-in-out overlay"></div>
+            <!-- Modal -->
+            <div class = "flex flex-col space-y-6 border-2 border-white59 rounded-2xl bg-black88 backdrop-blur absolute z-30 px-6 pt-4 pb-9 transition-all duration-500 ease-in-out scale-0 mx-4 sm:mx-0 modal">
+                <!-- Modal header -->
+                <div class = "flex items-center justify-between border-b border-white53 pb-3">
+                    <h2 class = "text-xl xs:text-3xl font-semibold text-white">Share My Profile</h2>
+                    <i class="fa-solid fa-xmark cursor-pointer text-white font-semibold text-xl xs:text-3xl close-modal"></i>
+                </div>
+                <!-- Share links -->
+                <h2 class = "text-base xs:text-lg font-medium text-white">Share this via</h2>
+                <div class = "flex flex-wrap gap-6 sm:gap-12 justify-around items-center">
+                    <!-- Facebook link -->
+                    <a href = "#" class = "w-12 xs:w-16 h-12 xs:h-16 rounded-full border border-brightNavyBlue flex justify-center items-center group hover:bg-brightNavyBlue transition-all duration-500"><i class="fa-brands fa-facebook-f text-xl xs:text-3xl text-brightNavyBlue group-hover:text-white transition-all duration-500"></i></a>
+                    <!-- Twitter link -->
+                    <a href = "#" class = "w-12 xs:w-16 h-12 xs:h-16 rounded-full border border-buttonBlue flex justify-center items-center group hover:bg-buttonBlue transition-all duration-500"><i class="fa-brands fa-twitter text-xl xs:text-3xl text-buttonBlue group-hover:text-white transition-all duration-500"></i></a>
+                    <!-- Instagram link  -->
+                    <a href = "#" class = "w-12 xs:w-16 h-12 xs:h-16 rounded-full border border-magenta flex justify-center items-center group hover:bg-magenta transition-all duration-500"><i class="fa-brands fa-instagram text-xl xs:text-3xl text-magenta group-hover:text-white transition-all duration-500"></i></a>
+                    <!-- Whatsapp link  -->
+                    <a href = "#" class = "w-12 xs:w-16 h-12 xs:h-16 rounded-full border border-UFOGreen flex justify-center items-center group hover:bg-UFOGreen transition-all duration-500"><i class="fa-brands fa-whatsapp text-xl xs:text-3xl text-UFOGreen group-hover:text-white transition-all duration-500"></i></a>
+                    <!-- Telegram link  -->
+                    <a href = "#" class = "w-12 xs:w-16 h-12 xs:h-16 rounded-full border border-blueNCS flex justify-center items-center group hover:bg-blueNCS transition-all duration-500"><i class="fa-brands fa-telegram text-xl xs:text-3xl text-blueNCS group-hover:text-white transition-all duration-500"></i></a>
+                </div>
+            </div>
+        </main>
+        <script src = "index.js"></script>
+        <script src="https://kit.fontawesome.com/463da5afdf.js" crossorigin="anonymous"></script>
+    </body>
+</html>
